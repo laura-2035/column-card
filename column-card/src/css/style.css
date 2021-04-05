@@ -6,15 +6,34 @@ body{
     background-color: hsl(0, 0%, 95%);
     font-size: 15px;
     font-family: 'Lexend Deca', sans-serif;
-    height: 100vh;
+    height: 95vh;
     color: hsla(0, 0%, 100%, 0.75);
 }
 h2{
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
+    font-size: 2.8em;
+    color: hsl(0, 0%, 95%);
+}
+.column a{
+    text-decoration: none;
+    padding: 15px 30px;
+    background: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 30%;
+    margin-bottom: 15%;
+}
+.column a:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color:hsl(0, 0%, 95%);
+}
+.column p{
+    line-height: 1.5em;
 }
 #root{
-    
     height: 100%;
 }
 .content{
@@ -26,12 +45,20 @@ h2{
 }
 .column{
     position: relative;
-    width: 20%;
-    height: 60%;
+    width: 300px;
+    height: 500px;
 }   
 .column h2,p, svg, a{
-    margin: 0% 10%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
+.column svg{
+    margin-top: 15%; 
+}
+.column h2, p{
+    margin-top: 10%;
+}
+
 .content .sedans{
     background-color: hsl(31, 77%, 52%);
     border-bottom-left-radius: 10px;
@@ -44,4 +71,51 @@ h2{
     background-color: hsl(179, 100%, 13%);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.sedans a{
+    color: hsl(31, 77%, 52%);
+}
+.suvs a{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury a{
+    color: hsl(179, 100%, 13%);
+}
+
+.attribution{
+    background-color: rgb(170, 167, 167);
+    height: 5vh;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.attribution a{
+    margin: 5px;
+}
+@media (max-width: 900px) {
+    .content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+    }
+
+    .content .sedans{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    .content .luxury{
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    .column p{
+        margin-right: 10%;
+    }
+    .column a{
+        margin-top: 10%;
+    }
+
 }

@@ -5,7 +5,7 @@ import {ReactComponent as LogoLuxury} from '../images/icon-luxury.svg'
 import '../css/style.css'
 
 export default () => {
-    const HTMLContent =
+    return (
         <div class="content">
             <div class="column sedans">
                 <LogoSedans></LogoSedans>
@@ -35,5 +35,5 @@ export default () => {
                 <a href="#">Learn More</a>
             </div>
         </div>
-    return HTMLContent
+   )
 }
