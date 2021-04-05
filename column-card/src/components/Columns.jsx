@@ -2,6 +2,7 @@ import React from 'react'
 import {ReactComponent as LogoSedans} from '../images/icon-sedans.svg'
 import {ReactComponent as LogoSUVS} from '../images/icon-suvs.svg'
 import {ReactComponent as LogoLuxury} from '../images/icon-luxury.svg'
+import '../css/style.css'
 
 export default () => {
     const HTMLContent =
