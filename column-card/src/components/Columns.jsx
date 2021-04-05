@@ -7,7 +7,7 @@ import '../css/style.css'
 export default () => {
     const HTMLContent =
         <div class="content">
-            <div class="column">
+            <div class="column sedans">
                 <LogoSedans></LogoSedans>
                 <h2>Sedans</h2>
                 <p>
@@ -16,7 +16,7 @@ export default () => {
                 </p>
                 <a href="#">Learn More</a>
             </div>
-            <div class="column">
+            <div class="column suvs">
                 <LogoSUVS></LogoSUVS>
                 <h2>SUVS</h2>
                 <p>
@@ -25,7 +25,7 @@ export default () => {
                 </p>
                 <a href="#">Learn More</a>
             </div>
-            <div class="column">
+            <div class="column luxury">
                 <LogoLuxury></LogoLuxury>
                 <h2>Luxury</h2>
                 <p>

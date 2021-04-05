@@ -7,17 +7,17 @@ body{
     font-size: 15px;
     font-family: 'Lexend Deca', sans-serif;
     height: 100vh;
+    color: hsla(0, 0%, 100%, 0.75);
 }
 h2{
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
 }
 #root{
-    position: relative;
+    
     height: 100%;
 }
 .content{
-    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,5 +25,23 @@ h2{
     height: 100%;
 }
 .column{
-
+    position: relative;
+    width: 20%;
+    height: 60%;
+}   
+.column h2,p, svg, a{
+    margin: 0% 10%;
+}
+.content .sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.content .suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+.content .luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
