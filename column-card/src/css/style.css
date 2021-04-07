@@ -8,8 +8,9 @@ body{
     font-family: 'Lexend Deca', sans-serif;
     height: 100vh;
     color: hsla(0, 0%, 100%, 0.75);
-    display: grid;
-    grid-template-rows: 1fr 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 h2{
     font-family: 'Big Shoulders Display', cursive;
@@ -30,13 +31,14 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    
 }
 .column{
     position: relative;
     width: 30%;
     max-width: 300px;
     height: 460px;
+    
 }   
 .column h2,p, svg, a{
     margin-right: 15%;
@@ -62,8 +64,7 @@ h2{
     display: inline-block;
     margin-bottom: 1.2em;
     position: relative;
-    bottom: 0px;
-    left: 0px;
+    border: 2px solid transparent;
    
 }
 
@@ -92,28 +93,22 @@ h2{
     color: hsl(179, 100%, 13%);
 }
 
-.attribution{
-    background-color: rgb(170, 167, 167);
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.attribution a{
-    margin: 5px;
-}
 @media (max-width: 780px) {
+    body{
+        display: unset;
+    }
     .content{
         flex-direction: column;
         align-items: center;
-        justify-content: unset;
-        margin: 5em;
+        margin-top: 3em;
+        margin-bottom: 3em;
     }
     .column{
         width: 70%;
         max-width: 700px;
         min-width: 300px;
         height: 450px;
+        margin-top: unset;
     }
 
     .content .sedans{
